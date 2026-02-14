@@ -1,6 +1,6 @@
 **UI file**
 HEADER
 
-content
+CONTENT
 
 FOOTER
