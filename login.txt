@@ -1,2 +1,2 @@
-login form
+login form with email & pw
 login btn
