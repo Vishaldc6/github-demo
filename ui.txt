@@ -1,1 +1,6 @@
 **UI file**
+HEADER
+
+CONTENT
+
+FOOTER
