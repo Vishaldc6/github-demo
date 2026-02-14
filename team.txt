@@ -2,8 +2,3 @@ t1
 new t2
 2t
 t3
-
-t1
-new t2
-2t
-t3
