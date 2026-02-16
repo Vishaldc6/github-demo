@@ -1,0 +1,17 @@
+name: 'Simple job'
+on: push
+
+jobs:
+  run-js: 
+    name: 'Run JS'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'npm version'
+        run: npm i
+      - name: 'Simple js greet action'
+        id: greet
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Temp
+      - name: 'Print greeting'
+        run: echo "${{steps.greet.output.time}}"
