@@ -6,8 +6,10 @@ jobs:
     name: 'Run JS'
     runs-on: ubuntu-latest
     steps:
-      - name: 'npm version'
-        run: npm i
+      - name: 'node & npm version'
+        run: |
+          node -v
+          npm -v
       - name: 'Simple js greet action'
         id: greet
         uses: actions/hello-world-javascript-action@v1
