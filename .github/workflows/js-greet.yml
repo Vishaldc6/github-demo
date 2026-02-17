@@ -8,6 +8,6 @@ jobs:
       - uses: ./.github/actions/greet 
         id: greet
         with: 
-          name: 'john'
+          who-to-greet: 'john'
       - run: |
           echo "output ${{steps.greet.outputs.greet}}"
