@@ -1,5 +1,13 @@
 name: 'greeting js'
 description: ''
+inputs:
+  who-to-greet:
+    description: "Name of the person to greet"
+    required: true
+
+outputs:
+  greet:
+    description: "The greeting message"
 runs:
   using: node12
   main: index.js
