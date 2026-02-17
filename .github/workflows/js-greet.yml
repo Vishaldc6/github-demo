@@ -1,0 +1,13 @@
+on: push
+jobs:
+  greet_js:
+    runs-on: ubuntu-latest
+    name: 'greeting'
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./.github/actions/greet 
+        id: greet
+        with: 
+          name: 'john'
+      - run: |
+          echo "output ${{steps.greet.outputs.greet}}"
