@@ -1,4 +1,4 @@
-const core = require("@actions/core");
+const core = require("./@actions/core");
 // const github = require("@actions/github");
 
 const name = core.getInput("who-to-greet", { required: true });
