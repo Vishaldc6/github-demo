@@ -1,3 +1,5 @@
 --login header--
 login form with email & pw
 login btn
+
+<register from here>
