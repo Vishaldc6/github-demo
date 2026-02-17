@@ -1,0 +1,5 @@
+name: 'greeting js'
+description: ''
+runs:
+  using: node12
+  main: index.js
