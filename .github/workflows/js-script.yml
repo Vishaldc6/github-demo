@@ -1,0 +1,22 @@
+name: 'Simple job'
+on: 
+  # schedule:
+  #   - cron: "*/5 * * * *"
+  push:
+
+jobs:
+  run-js: 
+    name: 'Run JS'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'node & npm version'
+        run: |
+          node -v
+          npm -v
+      - name: 'Simple js greet action'
+        id: greet
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: Temp
+      - name: 'Print greeting'
+        run: echo "${{steps.greet.outputs.time}}"
